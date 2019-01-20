@@ -173,7 +173,7 @@ Another solution is to use the ``reset_all()`` function when the application sta
 
     # On application start/restart
     import redis_lock
-    redis_lock.reset_all()
+    redis_lock.reset_all(redis_client)
 
 Alternativelly, you can reset individual locks via the ``reset`` method.
 
